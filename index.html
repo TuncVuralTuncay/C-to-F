@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+
+</head>
+<body>
+    <input type="number" id="input">
+    <button type="button" onclick="click()" value="Send" id="sa">Send</button>
+
+    <script>1
+        document.getElementById("sa").addEventListener("click", function(event) {
+            var input = document.getElementById("input").value
+            var cevap = input * 9 / 5 + 32
+            console.log(cevap)
+            document.write(input+"\xB0C is "+cevap+"\xB0F")
+        });
+    </script>
+</body>
